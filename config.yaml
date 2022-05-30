@@ -1,0 +1,48 @@
+baseurl: "https://0101sec.com"
+languageCode: "zh-cn"
+title: "rhmask的博客"
+theme: "hugo-tania"
+paginate: 6
+
+
+params:
+  titleEmoji: 🧑‍💻
+  enableFootnotes: true
+  # siteName: "rhmask的博客"
+  siteDesc: "学习/工作/日常踩坑记录"
+  author: "rhmask"
+  colorScheme:
+    toggle: true
+    default: auto
+
+  maxCategoryToShow: 10
+  socialOptions:
+    email: rhmask@163.com
+    github: https://github.com/rhmask
+
+menu:
+  header:
+    - name: Articles
+      url: "/articles/"
+      weight: 1
+    - name: Tags
+      url: "/tags/"
+      weight: 2
+    - name: About
+      url: "/about/"
+      weight: 3
+   
+  footer:
+    - name: RSS
+      url: "/index.xml"
+
+markup:
+  highlight:
+    noClasses: false
+    lineNos: true
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
